@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello Page{% endblock %}
+
+{% block body %}
+    {{ dump(app) }}
+    <div>
+        <h1>Hello Hello, {{ some_variable | default('Alex father') }} !</h1>
+        <p>Bonjour, {{ name  }}</p>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum sapien mauris, venenatis
+            facilisis neque tincidunt vel. Maecenas vel felis vel turpis scelerisque eleifend. Fusce nec purus egestas,
+            efficitur nisi ac, ultrices nulla. Pellentesque eu mollis tortor, in mollis nisl. Maecenas rhoncus quam non
+            lacinia mollis.</p>
+    </div>
+{% endblock %}
